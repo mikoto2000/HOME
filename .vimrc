@@ -28,6 +28,15 @@ augroup END
 """ 開いているファイルが格納されているディレクトリをカレントディレクトリとする
 :command! CDPWD :exec ":lcd " . expand("%:p:h")
 
+
+"""""" 今日の日付
+:let $TODAY = strftime('%Y%m%d')
+:imap <silent> <Space>TD <C-R>=strftime('%Y%m%d')<CR>
+
+""" 作業ファイル作成・編集
+:map <Space>wwl <Esc>:w ~/worklog/<C-R>=strftime('%Y%m%d')<CR>.txt<Enter>
+:map <Space>ewl <Esc>:e ~/worklog/<C-R>=strftime('%Y%m%d')<CR>.txt<Enter>
+
 """ UniteResume
 map <Space>u <Esc>:UniteResume<Enter>
 
@@ -44,7 +53,7 @@ map <Space>bb <Esc>:b#<Enter>
 
 """ cNext, cPrev
 map <Space>cn <Esc>:cn<Enter>
-map <Space>cp <Esc>:cn<Enter>
+map <Space>cp <Esc>:cp<Enter>
 
 """ VimFiler
 
