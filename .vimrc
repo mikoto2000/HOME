@@ -13,6 +13,7 @@ set pastetoggle=<f11>
 set ignorecase
 set incsearch
 set number
+set hidden
 
 """ include confs
 source ~/.vim/neocomplcache.conf
