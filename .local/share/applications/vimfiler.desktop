@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Vim Filer
+GenericName=Vim Filer
+MimeType=inode/director;
+Exec=gvim -f %f +VimFiler
+Icon=vim
+Type=Application
+Terminal=false
+X-KDE-StartupNotify=true
+X-KDE-AuthorizeAction=shell_access
+Categories=Utility;

@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Vim Shell
+GenericName=Vim Shell
+MimeType=inode/director;
+Exec=gvim -f %f +VimShell
+Icon=vim
+Type=Application
+Terminal=false
+X-KDE-StartupNotify=true
+X-KDE-AuthorizeAction=shell_access
+Categories=Utility;
