@@ -18,7 +18,7 @@ behave mswin
 
 """ include confs
 source ~/.vim/neocomplcache.conf
-source ~/.vim/vundle.conf
+source ~/.vim/neobundle.conf
 source ~/.vim/quickrun.conf
 
 """ change current directory
