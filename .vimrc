@@ -13,6 +13,8 @@ set pastetoggle=<f11>
 set ignorecase
 set incsearch
 set number
+set hidden
+behave mswin
 
 """ include confs
 source ~/.vim/neocomplcache.conf
@@ -31,7 +33,7 @@ augroup END
 
 """""" 今日の日付
 :let $TODAY = strftime('%Y%m%d')
-:imap <silent> <Space>TD <C-R>=strftime('%Y%m%d')<CR>
+:imap <silent> <Space>td <C-R>=strftime('%Y%m%d')<CR>
 
 """ 作業ファイル作成・編集
 :map <Space>wwl <Esc>:w ~/worklog/<C-R>=strftime('%Y%m%d')<CR>.txt<Enter>
@@ -66,4 +68,3 @@ map <Space>cu <Esc>:e ++enc=utf8<Enter>
 :set fileencodings=utf-8,ucs-bom,iso-2022-jp-3,iso-2022-jp,eucjp-ms,euc-jisx0213,euc-jp,sjis,cp932
 
 call unite#custom_default_action('source/bookmark/directory' , 'vimfiler')
-
