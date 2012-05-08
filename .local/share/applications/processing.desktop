@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Processing
+GenericName=Processing
+MimeType=;
+Exec=/home/mikoto/Develop/processing/processing-1.5.1/processing
+Icon=processing
+Type=Application
+Terminal=false
+X-KDE-StartupNotify=true
+X-KDE-AuthorizeAction=shell_access
+Categories=Programming;
