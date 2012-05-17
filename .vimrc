@@ -1,20 +1,19 @@
 """ MyCustom
 syntax on
-set tabstop=3
+set tabstop=4
 set cindent
 set smartindent
 set autoindent
-set noexpandtab
+set expandtab
 set showmatch
-set shiftwidth=3
-set softtabstop=3
+set shiftwidth=4
+set softtabstop=4
 set nocompatible
 set pastetoggle=<f11>
 set ignorecase
 set incsearch
 set number
 set hidden
-behave mswin
 
 """ include confs
 source ~/.vim/neocomplcache.conf
