@@ -47,7 +47,6 @@ map <Space>l <Esc>:Unite buffer<Enter>
 map <Space>uf <Esc>:Unite file<Enter>
 
 map <Space>b <Esc>:Unite bookmark<Enter>
-map <Space>vf <Esc>:VimFiler<Enter>
 
 """ 直前のバッファに戻る
 map <Space>bb <Esc>:b#<Enter>
@@ -57,6 +56,15 @@ map <Space>cn <Esc>:cn<Enter>
 map <Space>cp <Esc>:cp<Enter>
 
 """ VimFiler
+map <Space>vf <Esc>:VimFiler .<Enter>
+map <Space>f <Esc>:VimFiler .<Enter>
+
+""" VimShell
+map <Space>vs <Esc>:VimShell<Enter>
+map <Space>s <Esc>:VimShell<Enter>
+
+call unite#custom_default_action("vimshell/history", "insert")
+call unite#custom_default_action("vimshell/external_history", "insert")
 
 """ utf8 で再読み込み
 map <Space>cu <Esc>:e ++enc=utf8<Enter>
