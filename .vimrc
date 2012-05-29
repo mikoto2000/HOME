@@ -56,8 +56,8 @@ map <Space>cn <Esc>:cn<Enter>
 map <Space>cp <Esc>:cp<Enter>
 
 """ VimFiler
-map <Space>vf <Esc>:VimFiler .<Enter>
-map <Space>f <Esc>:VimFiler .<Enter>
+map <Space>vf <Esc>:VimFiler<Enter>
+map <Space>f <Esc>:VimFiler<Enter>
 
 """ VimShell
 map <Space>vs <Esc>:VimShell<Enter>
