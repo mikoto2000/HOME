@@ -73,5 +73,9 @@ map <Space>cu <Esc>:e ++enc=utf8<Enter>
 :set encoding=utf-8
 :set fileencoding=utf-8
 :set fileencodings=utf-8,ucs-bom,iso-2022-jp-3,iso-2022-jp,eucjp-ms,euc-jisx0213,euc-jp,sjis,cp932
+:set fileformat=unix
 
 call unite#custom_default_action('source/bookmark/directory' , 'vimfiler')
+
+""" statusline
+:set statusline=%<%f%h%m%r%=[%{&fenc!=''?&fenc:&enc}][%{&ff}][%l,%c%V]\ [%P]
